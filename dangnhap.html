@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhân Sự</title>
+    <link rel="stylesheet" href="maindangnhap.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="imagechance">
+            <ul class="logo">
+                <li class="con-logo" id="cc"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288717603_1325332614539502_535140357342867248_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=H-JnF3A0y-UAX8vvveE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQx6NTWt_2dnYvcF7QlMOTLawdFcfyFNssKOKCzP3sylQ&oe=6378DAAC" alt="" width="40px" height="30px" class="imagechance"></li>
+                <li class="con-logo" id="crazy">CRAZY</li>
+                <li class="con-logo" id="company">COMPANY</li>
+            </ul>
+        </div> 
+        <div class="khoidangki">
+            <ul class="ul-khoidangki">
+                <li class="dk-dn"><button class="save"><a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangnhap.html">Đăng Nhập</a></button></li>
+                <li class="dk-dn">|</li>
+                <li class="dk-dn"><button class="save"><a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangki.html">Đăng Ký</a></button></li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu">
+        <ul class="ul-menu">
+            <li id="list-menu" class="dropdown " >
+                <a class="dropbtn" href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/trangchudatlam.html">Trang chủ</a>
+            </li>
+            <li id="list-menu" class="dropdown " >
+                <a class="dropbtn">Thông tin chung</a>
+                <div class="dropdown-content"> 
+                    <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangki.html">Danh sách nhân viên</a>
+                    <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/thongtin.html">Thông tin</a>
+                    <a href="#">Thống kê biến động</a>
+                    <a href="#">Theo dõi thu chi</a>
+                </div>
+            </li>
+            <li id="list-menu" class="dropdown " >
+                <a class="dropbtn">Quản lí nhân viên</a>
+                <div class="dropdown-content"> 
+                    <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/tuyendung.html">Tuyển dụng</a>
+                    <a href="#">Chương trình rèn luyện</a>
+                    <a href="#">Đánh giá xếp loại</a>
+                    <a href="#">Khen thưởng - Kỉ luật</a>
+                    <a href="#">Nhân viên về hưu</a>
+                    <a href="#">Nhân viên đào thải</a>
+                    <a href="#">Nhân viên ưu tú</a>
+                </div>
+            </li>
+            </li>   
+            <li id="list-menu" class="dropdown " >
+                <a class="dropbtn">Tiện ích</a>
+                <div class="dropdown-content"> 
+                    <a href="#"></a>
+            </li>  
+            <li id="list-menu" class="dropdown " >
+                <a class="dropbtn">News</a>
+                <div class="dropdown-content"> 
+                    <a href="https://thanhnien.vn/">Báo Thanh Niên</a>
+            </li>   
+        </ul>
+    </div>
+    <div class="form-employee">
+        <label>Họ Và Tên:</label>
+        <input type="text" id="fullName" placeholder="Name...">
+        <span id="fullName-error" class="error"></span>
+        </br>
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="Email...">
+        <span id="email-error" class="error"></span>
+        </br>
+        <label></label>
+        </br>
+
+        <button class="save" onclick="save()">Đăng Nhập</button>
+    </div>
+    <div>
+        <footer class="footer">
+            <div class="address">
+                <p class="contten-address">© 2021 Công ty Cổ phần quản lí nhân sự CRAZY COMPANY<br>
+                    Địa chỉ Số 123 + 456, phố Trịnh Văn Bô, Quận Nam Từ Liêm, Hà Nội<br>
+                    GPĐKKD SỐ 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 30/2/2022<br>
+                    Email: infosdn.vn. Điện thoại: 19001234.
+                </p>
+            </div> 
+            <div class="list-footer">
+                <p>FOLLOW US</p>
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="https://www.facebook.com/sonttttttttttttttttttt"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288136475_1478440802614297_868283475241592349_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=6Fk2oy2Yt1kAX_tLqVq&_nc_oc=AQn_MaEr6mpR8bygcbo3QbZ2ugd_3EPROGsaGrfaS35DOlnHmsSZxB3ngF-iDVGWGVeWLgnNiiuNLUJ9k_llj9uC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRaznUQnGVcr0Uh0thMF9hDZtyQVzucnDyGcpSOsz__9Q&oe=6378C425" width="30px" height="23px" ></a></li>
+                    <li class="li-footer"><a href="https://www.youtube.com/channel/UCSJr2CdbT41pQeKUfR06nkQ"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/289086773_1226550941416922_948492852300116417_n.png?stp=dst-png_s240x240&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f5uQ5BliexgAX93rF8o&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR8WWiynbmQ1Pu0fdoi290RIHUxXleDQii5i0pM0SlAwA&oe=63790527" width="30px" height="23px" ></a></li>
+                    <li class="li-footer"><a href=""><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288336963_560596308983582_5979132003362958145_n.png?stp=dst-png_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=gE8WMKiEakAAX_AjcRY&_nc_oc=AQnH6aqIeU_JCThGYsi1ZCS0ix50F8tleN6mV7CUB4UkppDA-IZZg0Mwpk66-5VlOIUJEeAq_sc9tfHu9FYl0jBC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdToJQ3Z5fjDstVr7OL0jIxwq1g2qNWxcpjjYUW77TrVmQ&oe=6378EA36" width="30px" height="23px"></a></li>
+                    <li class="li-footer"><a href=""><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/290005689_443824317248131_9057870498802960359_n.png?stp=dst-png_s240x240&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=V5D6nfNsZcIAX-VraXX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTge81Y-0fQyK0Ui-rieGVxZ6YdQCB43fRqzm858oUA7g&oe=6378B8D5" width="30px" height="23px"></a></li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    <!--thư viện lodash-->
+    <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+</body>
+</html>

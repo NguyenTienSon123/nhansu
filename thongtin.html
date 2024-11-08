@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thiết kế Layout - Bố cục website trong CSS</title>
+        <meta charset="URF-8">
+        <link rel="stylesheet" href="maintrangchu.css">
+        <style>
+            :root{
+                --color:rgb(241, 219, 177);
+            }
+            :root{
+                --color_buton:#34ac64;
+            }
+            body {
+                padding: 0px;
+                margin: 0px;
+                /* background-image: url(https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg);
+                background-size: 100% auto;
+                background-repeat: no-repeat;*/         
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .header{
+                background-color: var(--color);
+                padding:10px;
+                margin:0px;
+                display:flex;
+                justify-content:space-between;
+            }
+            .imagechance{
+                margin:0px;
+                padding:0px;
+                display:flex;
+                list-style:none;
+                justify-content: space-between;
+            }
+            .logo{
+                margin:0px;
+                padding-top:10px;
+                list-style: none;
+            }
+            .con-logo{
+                display:inline-block;
+                color:#815c32;
+            }
+            #cc{
+                margin:0px;
+                padding:0px;
+            }
+            #crazy{
+                height:30px;
+                font-weight:900;
+                font-family: Arial Black;
+                margin:0px;
+                padding:0px;
+            }
+            #company{
+                font-family: Perpetua Titling MT;
+                margin:0px;
+                padding:0px;
+            }
+            .khoidangki{
+                margin-right: 40px;
+            }
+            .ul-khoidangki{   
+                list-style:none;
+                margin-right: 10px;
+            }
+            .dk-dn{
+                display:inline-block;
+                margin-right: 10px;
+            }
+            .ul-menu {
+                font-family: sans-serif;
+                list-style:none;
+                margin: 0;
+                padding-left: 40px;
+                overflow: hidden;
+                background-color: rgb(210, 244, 61);
+            }
+            #list-menu {
+                float: left;
+            }
+            #list-menu a, .dropbtn {
+                list-style:none;
+                display: inline-block;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            #list-menu a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+            #list-menu a, .dropdown {
+                display: block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                min-width:  160px;
+                box-shadow: 0px 8px 16px 0px  black;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown-content a:hover {
+                background-color: aliceblue;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .content{
+                width: 100%;
+                height:auto;
+                background-color: #d1e7fb;
+                padding-left: 40px;
+                margin-top:10px;
+                font-family:Comic Sans MS;
+            }
+            .h1-content{
+                margin-left: 100px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .list-tt{
+                margin-left: 160px;
+            }
+            .li-tt{
+                margin-left: 100px;
+            }
+            .list-footer{
+                margin-right: 40px;
+                font-family: Cascadia Code;
+            }
+            .ul-footer{
+                list-style:none;
+                padding:0px;
+            }
+            .li-footer{
+                display:inline-block;
+            }
+            button.save {
+                background-color: var(--color_buton);
+                border: none;
+                color: #FAF3E3;
+                padding: 8px 38px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 13px;
+                margin: 4px 2px;
+                cursor: pointer;
+                transition-duration: 0.4s;
+                border-radius: 10px;
+            }
+            button.save:hover {
+                box-shadow: 0 10px 10px 0  var(--color_buton),0 15px 50px 0  var(--color_buton);
+            }
+            .list-footer{
+                margin-right: 40px;
+                font-family: Cascadia Code;
+            }
+            .ul-footer{
+                list-style:none;
+                padding:0px;
+            }
+            .li-footer{  
+                display:inline-block;
+                width:30px;
+                height:23px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <header class="header"> 
+                <div class="imagechance">
+                    <ul class="logo">
+                        <li class="con-logo" id="cc"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288717603_1325332614539502_535140357342867248_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=H-JnF3A0y-UAX8vvveE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQx6NTWt_2dnYvcF7QlMOTLawdFcfyFNssKOKCzP3sylQ&oe=6378DAAC" alt="" width="40px" height="30px" class="imagechance"></li>
+                        <li class="con-logo" id="crazy">CRAZY</li>
+                        <li class="con-logo" id="company">COMPANY</li>
+                    </ul>
+                </div> 
+                <div class="khoidangki">
+                    <ul class="ul-khoidangki">
+                        <li class="dk-dn"><button class="save"><a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangnhap.html">Đăng Nhập</a></button></li>
+                        <li class="dk-dn">|</li>
+                        <li class="dk-dn"><button class="save"><a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangki.html">Đăng Ký</a></button></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="menu">
+                <ul class="ul-menu">
+                    <li id="list-menu" class="dropdown " >
+                        <a class="dropbtn" href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/trangchudatlam.html">Trang chủ</a>
+                    </li>
+                    <li id="list-menu" class="dropdown " >
+                        <a class="dropbtn">Thông tin chung</a>
+                        <div class="dropdown-content"> 
+                            <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/dangki.html">Danh sách nhân viên</a>
+                            <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/thongtin.html">Thông tin</a>
+                            <a href="#">Thống kê biến động</a>
+                            <a href="#">Theo dõi thu chi</a>
+                        </div>
+                    </li>
+                    <li id="list-menu" class="dropdown " >
+                        <a class="dropbtn">Quản lí nhân viên</a>
+                        <div class="dropdown-content"> 
+                            <a href="file:///C:/B%C3%A0i%20t%E1%BA%ADp%20l%E1%BB%9Bn/Thi%E1%BA%BFt%20k%E1%BA%BF%20Wed/Code%20wed/tuyendung.html">Tuyển dụng</a>
+                            <a href="#">Chương trình rèn luyện</a>
+                            <a href="#">Đánh giá xếp loại</a>
+                            <a href="#">Khen thưởng - Kỉ luật</a>
+                            <a href="#">Nhân viên về hưu</a>
+                            <a href="#">Nhân viên đào thải</a>
+                            <a href="#">Nhân viên ưu tú</a>
+                        </div>
+                    </li>
+                    </li>   
+                    <li id="list-menu" class="dropdown " >
+                        <a class="dropbtn">Tiện ích</a>
+                        <div class="dropdown-content"> 
+                            <a href="#"></a>
+                    </li>  
+                    <li id="list-menu" class="dropdown " >
+                        <a class="dropbtn">News</a>
+                        <div class="dropdown-content"> 
+                            <a href="https://thanhnien.vn/">Báo Thanh Niên</a>
+                    </li>   
+                </ul>
+            </div>
+            <div class="content">
+                <h1 class="h1-content">BAN QUẢN LÍ:</h1>
+                <ul class="list-tt">
+                    <li class="li-tt">
+                        <div class="dat">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/290320797_449110810052647_3545875223627583381_n.png?stp=dst-png_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=h5heKoM1dK0AX-QtMNM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR900Y4pmRL6YZm7CSw5K3UU6L8ixt-de_o7g88QLmJbQ&oe=6379094F" >
+                            <p>Ngô Quốc Đạt</p>
+                            <p>Chủ Tịch tập đoàn CC</p>
+                            <p>Năm sinh: 2003</p>
+                        </div>
+                    </li>
+                    <li class="li-tt">
+                        <div class="son">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287662948_1268626240580443_1726320352234666004_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=A7g-pCgLqlAAX9hp2yH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ1FnlLXuYzf0V3rN9TZFNWvGRPNQKmllhUlFiQN3dgag&oe=6378EA3D" >
+                            <p>Nguyễn Tiến Sơn</p>
+                            <p>Chủ Tịch tập đoàn CC</p>
+                            <p>Năm sinh: 2003</p>
+                        </div>
+                    </li>
+                    <li class="li-tt">
+                        <div class="nhung">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/291819230_747833453080204_2239251286004319785_n.png?stp=dst-png_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=0b5DfyDlOMwAX_th9Aa&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRxhjSEekxNILxIyWyaZo-f8pgR0QWFdVXAn7fDRCqGAg&oe=6378E182" >
+                            <p>Tô Thị Tuyết Nhung</p>
+                            <p>Trưởng phòng ý tưởng CC</p>
+                            <p>Năm sinh: 2003</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <footer class="footer">
+                    <div class="address">
+                        <p class="contten-address">© 2021 Công ty Cổ phần quản lí nhân sự CRAZY COMPANY<br>
+                            Địa chỉ Số 123 + 456, phố Trịnh Văn Bô, Quận Nam Từ Liêm, Hà Nội<br>
+                            GPĐKKD SỐ 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 30/2/2022<br>
+                            Email: infosdn.vn. Điện thoại: 19001234.
+                        </p>
+                    </div> 
+                    <div class="list-footer">
+                        <p>FOLLOW US</p>
+                        <ul class="ul-footer">
+                            <li class="li-footer"><a href="https://www.facebook.com/sonttttttttttttttttttt"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288136475_1478440802614297_868283475241592349_n.png?stp=dst-png_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=6Fk2oy2Yt1kAX_tLqVq&_nc_oc=AQn_MaEr6mpR8bygcbo3QbZ2ugd_3EPROGsaGrfaS35DOlnHmsSZxB3ngF-iDVGWGVeWLgnNiiuNLUJ9k_llj9uC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRaznUQnGVcr0Uh0thMF9hDZtyQVzucnDyGcpSOsz__9Q&oe=6378C425" width="30px" height="23px" ></a></li>
+                            <li class="li-footer"><a href="https://www.youtube.com/channel/UCSJr2CdbT41pQeKUfR06nkQ"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/289086773_1226550941416922_948492852300116417_n.png?stp=dst-png_s240x240&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f5uQ5BliexgAX93rF8o&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR8WWiynbmQ1Pu0fdoi290RIHUxXleDQii5i0pM0SlAwA&oe=63790527" width="30px" height="23px" ></a></li>
+                            <li class="li-footer"><a href=""><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288336963_560596308983582_5979132003362958145_n.png?stp=dst-png_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=gE8WMKiEakAAX_AjcRY&_nc_oc=AQnH6aqIeU_JCThGYsi1ZCS0ix50F8tleN6mV7CUB4UkppDA-IZZg0Mwpk66-5VlOIUJEeAq_sc9tfHu9FYl0jBC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdToJQ3Z5fjDstVr7OL0jIxwq1g2qNWxcpjjYUW77TrVmQ&oe=6378EA36" width="30px" height="23px"></a></li>
+                            <li class="li-footer"><a href=""><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/290005689_443824317248131_9057870498802960359_n.png?stp=dst-png_s240x240&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=V5D6nfNsZcIAX-VraXX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTge81Y-0fQyK0Ui-rieGVxZ6YdQCB43fRqzm858oUA7g&oe=6378B8D5" width="30px" height="23px"></a></li>
+                        </ul>
+                    </div>
+                </footer>
+                </div>
+    </body>
+</html>
